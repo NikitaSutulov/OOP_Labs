@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab2/app/src/main/res/menu/main_menu.xml" value="0.19739583333333333" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/drawable-v24/ellipse_inactive.xml" value="0.332" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.332" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/drawable/ellipse.xml" value="0.332" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.332" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/drawable/line_inactive.xml" value="0.332" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/drawable/point_inactive.xml" value="0.332" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/drawable/rectangle_inactive.xml" value="0.332" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/drawable/square.xml" value="0.332" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/Lab3/app/src/main/res/menu/main_menu.xml" value="0.2712962962962963" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/OOPLabs/app/src/main/res/menu/main_menu.xml" value="0.20520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

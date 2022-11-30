@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Точка"
+        android:id="@+id/pointOption"
+        android:checkable="true"/>
+    <item
+        android:title="Лінія"
+        android:id="@+id/lineOption"
+        android:checkable="true"/>
+    <item
+        android:title="Прямокутник"
+        android:id="@+id/rectOption"
+        android:checkable="true"/>
+    <item
+        android:title="Елліпс"
+        android:id="@+id/ellipseOption"
+        android:checkable="true"/>
+</menu>

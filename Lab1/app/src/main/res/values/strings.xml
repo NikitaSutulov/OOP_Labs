@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab 1</string>
+    <string name="work1">Work 1</string>
+    <string name="work2">Work 2</string>
+    <string name="yes">Так</string>
+    <string name="cancel">Відміна</string>
+    <string name="enter_text">Введіть який-небудь текст</string>
+</resources>

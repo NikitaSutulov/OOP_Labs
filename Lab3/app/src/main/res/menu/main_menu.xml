@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Точка"
+        android:id="@+id/pointButton"
+        app:showAsAction="always"
+        android:icon="@drawable/point_inactive"/>
+    <item
+        android:title="Лінія"
+        android:id="@+id/lineButton"
+        app:showAsAction="always"
+        android:icon="@drawable/line_inactive"/>
+    <item
+        android:title="Прямокутник"
+        android:id="@+id/rectButton"
+        app:showAsAction="always"
+        android:icon="@drawable/rectangle_inactive"/>
+    <item
+        android:title="Елліпс"
+        android:id="@+id/ellipseButton"
+        app:showAsAction="always"
+        android:icon="@drawable/ellipse_inactive"/>
+    <item
+        android:title="Точка"
+        android:id="@+id/pointOption"/>
+    <item
+        android:title="Лінія"
+        android:id="@+id/lineOption"/>
+    <item
+        android:title="Прямокутник"
+        android:id="@+id/rectOption"/>
+    <item
+        android:title="Еліпс"
+        android:id="@+id/ellipseOption"/>
+</menu>
