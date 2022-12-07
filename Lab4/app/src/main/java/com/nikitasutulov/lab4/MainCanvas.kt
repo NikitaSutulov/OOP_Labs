@@ -18,7 +18,7 @@ class MainCanvas (context: Context): View(context) {
     //set pen color
     private val penColor = Color.BLACK
 
-    private val paint = Paint().apply {
+    val paint = Paint().apply {
         color = penColor
         isAntiAlias = true
         isDither = true
@@ -35,17 +35,8 @@ class MainCanvas (context: Context): View(context) {
 
     private var shapeEditor: MyEditor = MyEditor(paint, shapes)
 
-    enum class ShapeOptions {
-        POINT,
-        LINE,
-        RECT,
-        ELLIPSE,
-        LINE_WITH_CIRCLES,
-        CUBE
-    }
-
-    fun setShapeEditorCurrentShapeOption(shapeOption: ShapeOptions) {
-        shapeEditor.setCurrentShapeOption(shapeOption)
+    fun setShapeEditorCurrentShape(shape: Shape) {
+        shapeEditor.setCurrentShape(shape)
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {

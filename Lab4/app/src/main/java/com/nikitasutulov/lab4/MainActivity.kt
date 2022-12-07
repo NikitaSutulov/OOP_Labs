@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar?.title = "Lab 4"
         mainCanvas = MainCanvas(this)
-        mainCanvas.setShapeEditorCurrentShapeOption(MainCanvas.ShapeOptions.LINE)
+        mainCanvas.setShapeEditorCurrentShape(LineShape(mainCanvas.paint))
         setContentView(mainCanvas)
         showSystemUI()
     }
@@ -39,37 +39,37 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.ellipseButton, R.id.ellipseOption -> {
                 currentSelectedOption = mainMenu.findItem(R.id.ellipseButton)
-                mainCanvas.setShapeEditorCurrentShapeOption(MainCanvas.ShapeOptions.ELLIPSE)
+                mainCanvas.setShapeEditorCurrentShape(EllipseShape(mainCanvas.paint))
                 currentSelectedOption.icon = ContextCompat.getDrawable(this, R.drawable.ellipse)
                 supportActionBar?.subtitle = "Еліпс"
             }
             R.id.lineButton, R.id.lineOption -> {
                 currentSelectedOption = mainMenu.findItem(R.id.lineButton)
-                mainCanvas.setShapeEditorCurrentShapeOption(MainCanvas.ShapeOptions.LINE)
+                mainCanvas.setShapeEditorCurrentShape(LineShape(mainCanvas.paint))
                 currentSelectedOption.icon = ContextCompat.getDrawable(this, R.drawable.line)
                 supportActionBar?.subtitle = "Лінія"
             }
             R.id.pointButton, R.id.pointOption -> {
                 currentSelectedOption = mainMenu.findItem(R.id.pointButton)
-                mainCanvas.setShapeEditorCurrentShapeOption(MainCanvas.ShapeOptions.POINT)
+                mainCanvas.setShapeEditorCurrentShape(PointShape(mainCanvas.paint))
                 currentSelectedOption.icon = ContextCompat.getDrawable(this, R.drawable.point)
                 supportActionBar?.subtitle = "Точка"
             }
             R.id.rectButton, R.id.rectOption -> {
                 currentSelectedOption = mainMenu.findItem(R.id.rectButton)
-                mainCanvas.setShapeEditorCurrentShapeOption(MainCanvas.ShapeOptions.RECT)
+                mainCanvas.setShapeEditorCurrentShape(RectShape(mainCanvas.paint))
                 currentSelectedOption.icon = ContextCompat.getDrawable(this, R.drawable.rectangle)
                 supportActionBar?.subtitle = "Прямокутник"
             }
             R.id.lineWithCirclesButton, R.id.lineWithCirclesOption -> {
                 currentSelectedOption = mainMenu.findItem(R.id.lineWithCirclesButton)
-                mainCanvas.setShapeEditorCurrentShapeOption(MainCanvas.ShapeOptions.LINE_WITH_CIRCLES)
+                mainCanvas.setShapeEditorCurrentShape(LineWithCirclesShape(mainCanvas.paint))
                 currentSelectedOption.icon = ContextCompat.getDrawable(this, R.drawable.linewithcircles)
                 supportActionBar?.subtitle = "Лінія з кружечками"
             }
             R.id.cubeButton, R.id.cubeOption -> {
                 currentSelectedOption = mainMenu.findItem(R.id.cubeButton)
-                mainCanvas.setShapeEditorCurrentShapeOption(MainCanvas.ShapeOptions.CUBE)
+                mainCanvas.setShapeEditorCurrentShape(CubeShape(mainCanvas.paint))
                 currentSelectedOption.icon = ContextCompat.getDrawable(this, R.drawable.cube)
                 supportActionBar?.subtitle = "Каркас куба"
             }

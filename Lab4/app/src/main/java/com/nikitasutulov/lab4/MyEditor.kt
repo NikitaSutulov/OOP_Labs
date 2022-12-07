@@ -7,10 +7,9 @@ open class MyEditor(paint: Paint, shapes: Array<Shape?>) {
     val shapes = shapes
 
     private var currentShape = Shape(paint)
-    private var currentShapeOption = MainCanvas.ShapeOptions.LINE
 
     fun onLBDown(x: Float, y: Float) {
-        setCurrentShape(currentShapeOption)
+        setCurrentShape(currentShape)
         currentShape.setStartCoords(x, y)
     }
 
@@ -28,18 +27,8 @@ open class MyEditor(paint: Paint, shapes: Array<Shape?>) {
         ShapeManager.addShape(currentShape, shapes)
     }
 
-    fun setCurrentShapeOption(shapeOption: MainCanvas.ShapeOptions) {
-        currentShapeOption = shapeOption
-    }
-
-    private fun setCurrentShape(shapeOption: MainCanvas.ShapeOptions) {
-        currentShape = when(shapeOption) {
-            MainCanvas.ShapeOptions.ELLIPSE -> EllipseShape(paint)
-            MainCanvas.ShapeOptions.LINE -> LineShape(paint)
-            MainCanvas.ShapeOptions.POINT -> PointShape(paint)
-            MainCanvas.ShapeOptions.RECT -> RectShape(paint)
-            MainCanvas.ShapeOptions.LINE_WITH_CIRCLES -> LineWithCirclesShape(paint)
-            MainCanvas.ShapeOptions.CUBE -> CubeShape(paint)
-        }
+    fun setCurrentShape(shape: Shape) {
+        val constructor = shape::class.java.getConstructor(paint::class.java)
+        currentShape = constructor.newInstance(paint)
     }
 }

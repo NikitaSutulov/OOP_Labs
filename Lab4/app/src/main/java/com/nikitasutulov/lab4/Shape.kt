@@ -37,7 +37,7 @@ open class Shape(paint: Paint) {
     }
 
     fun setGumTracePaintStyle() {
-        var dashIntervals = FloatArray(2) {30f; 10f}
+        val dashIntervals = FloatArray(2) {30f; 10f}
         paint.apply {
             color = Color.RED
             style = Paint.Style.STROKE
