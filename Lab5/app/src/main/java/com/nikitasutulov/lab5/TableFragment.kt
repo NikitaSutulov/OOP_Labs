@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
-import androidx.core.view.children
 import java.io.File
 import java.io.FileInputStream
 
@@ -36,7 +35,7 @@ class TableFragment : Fragment() {
         mainCanvas = requireActivity().findViewById(R.id.mainCanvas)
         tableLayout = fragmentView.findViewById(R.id.tableLayout)
         setLayout(tableLayout)
-        mainCanvas.setShapeEditorTable(this)
+        mainCanvas.setTable(this)
         saveButton = fragmentView.findViewById(R.id.saveButton)
         loadButton = fragmentView.findViewById(R.id.loadButton)
 

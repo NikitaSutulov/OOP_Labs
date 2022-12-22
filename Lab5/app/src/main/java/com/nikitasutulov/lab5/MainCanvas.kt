@@ -46,7 +46,7 @@ class MainCanvas (context: Context, attributeSet: AttributeSet): View(context, a
         shapeEditor.setCurrentShape(shape)
     }
 
-    fun setShapeEditorTable(table: TableFragment) {
+    fun setTable(table: TableFragment) {
         this.table = table
         shapeEditor.setTable(table)
     }
