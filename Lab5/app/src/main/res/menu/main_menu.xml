@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Точка"
+        android:id="@+id/pointButton"
+        app:showAsAction="always"
+        android:icon="@drawable/point_inactive"/>
+    <item
+        android:title="Лінія"
+        android:id="@+id/lineButton"
+        app:showAsAction="always"
+        android:icon="@drawable/line_inactive"/>
+    <item
+        android:title="Прямокутник"
+        android:id="@+id/rectButton"
+        app:showAsAction="always"
+        android:icon="@drawable/rectangle_inactive"/>
+    <item
+        android:title="Елліпс"
+        android:id="@+id/ellipseButton"
+        app:showAsAction="always"
+        android:icon="@drawable/ellipse_inactive"/>
+    <item
+        android:title="Лінія з кружечками"
+        android:id="@+id/lineWithCirclesButton"
+        app:showAsAction="always"
+        android:icon="@drawable/linewithcircles_inactive"/>
+    <item
+        android:title="Каркас куба"
+        android:id="@+id/cubeButton"
+        app:showAsAction="always"
+        android:icon="@drawable/cube_inactive"/>
+    <item
+        android:title="Показати таблицю об'єктів"
+        android:id="@+id/toggleTableButton"
+        app:showAsAction="always"
+        android:icon="@drawable/table"/>
+    <item
+        android:title="Точка"
+        android:id="@+id/pointOption"/>
+    <item
+        android:title="Лінія"
+        android:id="@+id/lineOption"/>
+    <item
+        android:title="Прямокутник"
+        android:id="@+id/rectOption"/>
+    <item
+        android:title="Еліпс"
+        android:id="@+id/ellipseOption"/>
+    <item
+        android:title="Лінія з кружечками"
+        android:id="@+id/lineWithCirclesOption" />
+    <item
+        android:title="Каркас куба"
+        android:id="@+id/cubeOption"/>
+    <item
+        android:title="Показати таблицю об'єктів"
+        android:id="@+id/toggleTableOption"/>
+</menu>
