@@ -22,4 +22,8 @@ class PointShape(paint: Paint) : Shape(paint) {
             style = Paint.Style.FILL_AND_STROKE
         }
     }
+
+    override fun setEndCoords(x: Float, y: Float) {
+
+    }
 }

@@ -20,7 +20,7 @@ open class Shape(paint: Paint) {
         startY = y
     }
 
-    fun setEndCoords(x: Float, y: Float) {
+    open fun setEndCoords(x: Float, y: Float) {
         endX = x
         endY = y
     }
@@ -70,5 +70,9 @@ open class Shape(paint: Paint) {
 
     open fun createShape(): Shape {
         return Shape(paint)
+    }
+
+    fun getHighlightState(): Boolean {
+        return isHighlighted
     }
 }

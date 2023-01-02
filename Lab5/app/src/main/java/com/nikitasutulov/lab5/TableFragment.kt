@@ -1,5 +1,6 @@
 package com.nikitasutulov.lab5
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.Button
 import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
+import androidx.core.view.allViews
 import java.io.File
 import java.io.FileInputStream
 
@@ -76,6 +78,12 @@ class TableFragment : Fragment() {
         newTextRow.addView(y1)
         newTextRow.addView(x2)
         newTextRow.addView(y2)
+
+        for (i in 0..newTextRow.childCount) {
+            val textView: TextView? = newTextRow.getChildAt(i) as TextView?
+            textView?.setTextColor(Color.BLACK)
+        }
+
         newTextRow.setOnLongClickListener {
             ShapeManager.removeOnIndex(mainCanvas.getShapes().indexOf(row.ref), mainCanvas.getShapes())
             tableLayout.removeViewInLayout(newTextRow)
@@ -85,6 +93,16 @@ class TableFragment : Fragment() {
             true
         }
         newTextRow.setOnClickListener {
+
+            for (i in 0..newTextRow.childCount) {
+                val textView: TextView? = newTextRow.getChildAt(i) as TextView?
+                if (!row.ref.getHighlightState()) {
+                    textView?.setTextColor(Color.CYAN)
+                } else {
+                    textView?.setTextColor(Color.BLACK)
+                }
+            }
+
             row.ref.setHighlight()
             mainCanvas.invalidate()
         }
